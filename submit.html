@@ -34,8 +34,11 @@
       <label for="message">Describe your issue</label>
       <textarea id="message" name="message" rows="6" required></textarea>
 
-      <!-- This becomes the Trello Card Title -->
-      <input type="hidden" name="_subject" value="New Ticket Submission">
+      <!-- Card Title in Trello -->
+      <input type="hidden" name="_subject" value="New Support Ticket">
+
+      <!-- Redirect to confirmation.html after submit -->
+      <input type="hidden" name="_redirect" value="confirmation.html">
 
       <button type="submit">Submit Ticket</button>
     </form>
